@@ -12,7 +12,13 @@ WebSocketServer.on("connection", ws =>{ // this functon will be called whenever 
         WebSocketServer.send(`Server response: you sent -> ${message}`);
     });
 
+    //send message to client every 5 seconds
     setInterval(()=>{
         console.log(`Totally there are ${WebSocketServer.clients.size} clients connected to the server`),5000
     });
+
+    // this will be called when the client closes the tab  
+    WebSocketServer.close("close",()=>console.log(`Client disconnected, Total no.of Clients: ${WebSocketServer.clients.size}`));
 })
+
+console.log(`server successfully running on ws://localhost:8080`)
