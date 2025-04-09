@@ -1,0 +1,25 @@
+{
+  "name": "websocket",
+  "version": "1.0.0",
+  "description": "To learn web sockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rithishcodespace/WebSockets-Demo.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Rithish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rithishcodespace/WebSockets-Demo/issues"
+  },
+  "homepage": "https://github.com/rithishcodespace/WebSockets-Demo#readme",
+  "dependencies": {
+    "ws": "^8.18.1"
+  }
+}
